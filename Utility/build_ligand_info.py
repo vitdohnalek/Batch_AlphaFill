@@ -1,6 +1,7 @@
 #You can download the ligand info in .CSV format from https://www.rcsb.org/
 #This simple script iterates over the files and builds JSON file
 #The JSON files contains all unique ligand IDs and Names
+#Premade ligand info file is already uploaded to this repository
 import glob
 
 Ligand_ID = 0
