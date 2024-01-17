@@ -24,7 +24,7 @@ for file in glob.glob("*.csv"):
     Ligand_ID, Ligand_Name = 0, 0
 
 for k, v in ligands_dict.items():
-    v = v.replace('"',"'")
+    v = v.replace('"',"'").strip()
     ligands += f'\t"{k}" : "{v}",\n'
 ligands = ligands.strip(",\n")           
 ligands += "\n}"
