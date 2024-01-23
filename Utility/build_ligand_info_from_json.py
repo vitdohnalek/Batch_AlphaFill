@@ -2,8 +2,6 @@
 #This simple script iterates over the files and builds JSON file
 #The JSON files contains all unique ligand IDs and Names
 import glob
-import json
-
 
 ligands_dict = {}
 
