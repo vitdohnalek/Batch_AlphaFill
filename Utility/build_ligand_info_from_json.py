@@ -1,4 +1,4 @@
-#You can download the ligand info in .json format from https://www.rcsb.org/
+#You can download the ligand info files in .json format from https://www.rcsb.org/
 #This simple script iterates over the files and builds JSON file
 #The JSON files contains all unique ligand IDs and Names
 import glob
@@ -8,7 +8,7 @@ ligands_dict = {}
 id_value = ""
 name_value = ""
 
-for file in glob.glob("./ligands_json/*.json"):
+for file in glob.glob("./*.json"):
     with open(file, "r") as f:
         for l in f:
             if '"id"' in l:
