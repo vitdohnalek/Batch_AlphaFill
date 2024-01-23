@@ -23,6 +23,7 @@ def add_ligand_names(ligand_info_file, table, output_suffix="ligand_names"):
                 else:
                     new_table += ligand + "; " + ligand_info[ligand.split()[0]].replace(" ","_") + "\t"
             new_table = new_table.strip() + "\n"
+            
     if output_suffix != "":
         with open(f"{table_name}_{output_suffix}.tsv", "w") as f:
             f.write(new_table)
